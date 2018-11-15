@@ -1,0 +1,208 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+
+<!--<header>-->
+    <!--<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">-->
+        <!--<a class="navbar-brand" href="#">Carousel</a>-->
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">-->
+            <!--<span class="navbar-toggler-icon"></span>-->
+        <!--</button>-->
+        <!--<div class="collapse navbar-collapse" id="navbarCollapse">-->
+            <!--<ul class="navbar-nav mr-auto">-->
+                <!--<li class="nav-item active">-->
+                    <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" href="#">Link</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link disabled" href="#">Disabled</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <!--<form class="form-inline mt-2 mt-md-0">-->
+                <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+                <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+            <!--</form>-->
+        <!--</div>-->
+    <!--</nav>-->
+<!--</header>-->
+
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>
+                    <p class="text-center">Co wybierają internauci- piłka nożna czy piłka siatkowa?</p>
+                </h1>
+                <h2>
+                <p class="text-justify">
+
+                    W roku 2018 odbyły się dwa wydarzenia niezwykle ważne dla fanów sportów zespołowych: Mundial w Rosji
+                    (14 czerwca – 15 lipca), w którym Polska reprezentacja niestety odpadła w fazie grupowej oraz
+                    Mistrzostwa Świata w piłce siatkowej mężczyzn w Turynie (9-30 września), z których nasi rodacy
+                    wrócili ze złotymi medalami. Które z tych wydarzeń cieszyły się większym zainteresowaniem Polaków?
+
+                </p>
+                </h2>
+            </div><!-- /.col-lg-4 -->
+
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-lg-6">
+
+                <h2 class="featurette-heading">Ilość osób śledzących newsy sportowe. <span class="text-muted"></span></h2>
+                <p class="lead">Większym zainteresowaniem wśród internautów cieszyły się rozgrywki piłki nożnej, mimo iż
+                    reprezentacja siatkarska osiągnęła o wiele lepsze wyniki. Podczas mistrzostw w piłce nożnej liczba fanów
+                    śledzących newsy sportowe wynosiła średnio 10,6 miliona osób, a podczas MŚ w siatkówce – 8 milionów. </p>
+            </div>
+            <div class="col-lg-6">
+
+                <div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-lg-6">
+                <h2 class="featurette-heading">Zainteresowanie mistrzostwami kobiet a mężczyzn. </h2>
+                <p class="lead"> W czasie trwania mistrzostw świata w siatkówce, średnia liczba kobiet śledzących
+                    newsy sportowe wynosiła 2,8 mln w ciągu tygodnia, jednak w trakcie trwania mundiali wzrosła do 4,2 mln
+                    (śrenia ilośc pań śledzących newsy spotrowe w maju- miesiąc przypadkowy, wynosiła 2,6 mln)
+                    Średnia liczba mężczyzn śledzących serwisy sportowe w maju wynosiła 5,4 mln.
+                    W trakcie mundialu ich aktywność wzrosła do 6,3 mln, a w okresie trwania MŚ w siatkówce zmniejszyła się do 5,1 mln.</p>
+            </div>
+
+            <div class="col-lg-6">
+                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+            </div>
+
+
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-lg-6">
+                <h2 class="featurette-heading">Młodsi- noga, starsi- siatkówka.</h2>
+                <p class="lead">
+                    Podczas analizy poszczególnych grup wiekowych również znaleziono ciekawą zależność.
+                    W okresie mundialu najmłodsza grupa badanych 7-24 lat stanowiła 17,32% użytkowników w serwisach
+                    sportowych, a podczas MŚ w siatkówce – tylko 15,23% (średnie dopasowanie grupy 7-24 w maju wynosiło 15,14%).
+                    Z kolei wśród starszych badanych (55-75) królowała siatkówka (24,53% wszystkich użytkowników w trakcie
+                    MŚ w siatkówce vs. 21,55% w przypadku mundialu. Średnie dopasowanie w maju wynosiło 22,28%).</p>
+            </div>
+           <div class="col-lg-6">
+
+               <div id="chartContainer3" style="height: 300px; width: 100%;"></div>
+
+            </div>
+        </div>
+         <small> Informacje zaczerpnięte ze strony: http://www.gemius.pl/wszystkie-artykuly-aktualnosci/pilkarski-czerwiec-kontra-siatkarski-wrzesien.html</small>
+
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+        <form data-toggle="validator" role="form">
+            <div class="form-group">
+                <label for="inputName" class="control-label">Login</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Login" required>
+            </div>
+
+            <div class="form-group">
+                <label for="inputEmail" class="control-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+                <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword" class="control-label">Hasło</label>
+                <div class="form-inline row">
+                    <div class="form-group col-sm-6">
+                        <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Hasło" required>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" id="terms" data-error="Before you wreck yourself" required>
+                        Check yourself
+                    </label>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+
+
+
+
+
+    <!-- FOOTER -->
+
+<footer>
+<p class="float-right"><a href="#">Back to top</a></p>
+
+<div class="alert alert-dismissible text-center cookiealert" role="alert">
+    <div class="cookiealert-container">
+        <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="http://cookiesandyou.com/" target="_blank">Learn more</a>
+
+        <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+            I agree
+        </button>
+    </div>
+</div>
+
+</footer>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
+<script src="charts.js"></script>
+<script src="validator.js"></script>
+
+
+
+
+
+</body>
+</html>
