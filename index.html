@@ -6,12 +6,18 @@
     <meta name="description" content="">
     <meta name="author" content="Ewa Regilewicz">
 
+    <link rel="css/validator.css">
+    <link rel="css/formularz.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
           integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
           crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+
 </head>
 <body>
     <div class="container marketing">
@@ -98,19 +104,18 @@
 
         <!-- /END THE FEATURETTES -->
 
-        <form data-toggle="validator" role="form">
+        <form id="singnupForm"  class="col-sm-8 col-sm-offset-2 card p-3 mb-2 bg-info text-white form-signin" _lpchecked="1">
             <div class="form-group">
-                <label for="inputName" class="control-label">Login</label>
-                <input type="text" class="form-control" id="inputName" placeholder="Login" required>
+                <label for="inputName" class="col-sm-4 control-label ">Login</label>
+                <input type="text" class="col-sm-5 form-control" id="inputName" placeholder="Login" required>
             </div>
-
             <div class="form-group">
-                <label for="inputEmail" class="control-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+                <label for="inputEmail" class="col-sm-4 control-label">Email</label>
+                <input type="email" class="col-sm-5 form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
                 <div class="help-block with-errors"></div>
             </div>
             <div class="form-group">
-                <label for="inputPassword" class="control-label">Hasło</label>
+                <label for="inputPassword" class="col-sm-4 control-label">Hasło</label>
                 <div class="form-inline row">
                     <div class="form-group col-sm-6">
                         <input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Hasło" required>
@@ -131,12 +136,17 @@
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
+
         </form>
 
 
 
         <footer>
-            <div class="alert alert-dismissible text-center cookiealert" role="alert">
+
+            <nav x = "document.cookie"></nav>
+
+
+            <div class="alert alert-dismissible text-center cookiealert" role="alert" style="display:none;">
                 <div class="cookiealert-container">
                     <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="http://cookiesandyou.com/" target="_blank">Learn more</a>
 
@@ -154,11 +164,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
 <script src="js/charts.js"></script>
-<script src="js/validator.js"></script>
-
-
+<script src="js/validator.css"></script>
+<script src="js/cookies.js"></script>
 
 
 
