@@ -329,18 +329,21 @@ for (let i=0; i<names.length; i++) {
 //     deleteCookie("mojeCiasteczko");
 // });
 //
-
-var x, z = 3;
-
-
-    if () {
-
-    } else if () {
-
-    } else {
-
-    }
-
-
-
-
+//
+// var x, z = 3;
+//
+//
+//     if () {
+//
+//     } else if () {
+//
+//     } else {
+//
+//     }
+//
+//
+//
+// function password{
+//         if (i>8)
+//
+// }
